@@ -78,7 +78,7 @@
     filter: brightness(60%) blur(1px);
 }
 
-.ex-10-icon:hover {
+.ex-10-icon {
     animation-name: gira;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
@@ -86,7 +86,7 @@
 }
 
 @keyframes gira {
-    0% {
+    100% {
         transform: rotate(360deg);
     }
 }
@@ -170,36 +170,34 @@
         top: -10px;
     }
 
-    40% {
+    30% {
         left: calc(100% - 30px);
         top: -10px;
     }
 
     45% {
-        transform: rotate(90deg);
-        left: 100%;
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+
+    75% {
+        left: 0;
+        top: 100%;
+    }
+
+    90% {
+        left: -15px;
         top: -10px;
     }
 
-    55% {
-        transform: rotate(90deg);
-        left: 100%;
-        top: 100%;
-    }
-
-    60% {
-        left: 100%;
-        top: 100%;
-    }
-
     100% {
-        left: calc(80%-60px);
+        left: 10%;
         top: -10px;
     }
 }
 
 @keyframes muovi-bottom-white-giro {
-    /* 0% {
+    0% {
         bottom: -10px;
         right: 20%;
     }
@@ -227,5 +225,5 @@
     100% {
         bottom: -10px;
         right: 20%;
-    } */
+    }
 }
